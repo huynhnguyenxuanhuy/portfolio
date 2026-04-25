@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="./css/admin.css" />
 
-  <!-- 🔐 Bảo vệ trang admin: nếu chưa login sẽ tự chuyển sang login.html -->
   <script src="./js/auth.js"></script>
   <script>requireAuth();</script>
 </head>
@@ -83,7 +82,9 @@
 
   <div class="toast" id="toast"></div>
 
-  <script src="./js/admin.js"></script>
+  <script type="module" src="./js/firebase-config.js"></script>
+  <script type="module" src="./js/admin-firebase.js"></script>
+  <script type="module" src="./js/admin.js"></script>
   <script src="./js/preloader.js"></script>
 </body>
 </html>
