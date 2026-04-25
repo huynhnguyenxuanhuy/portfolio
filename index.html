@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Huỳnh Nguyễn Xuân Huy — Personal portfolio of a passionate web developer." />
+  <meta name="author" content="Huỳnh Nguyễn Xuân Huy" />
+  <title>Huỳnh Nguyễn Xuân Huy — Developer Portfolio</title>
+
+  <!-- 🎬 Preloader (đặt sớm nhất để hiện ngay khi trang load) -->
+  <script src="./js/preloader.js"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' font-family='Arial' font-weight='700' fill='%237c3aed'%3EH%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Animated background -->
+  <canvas id="bgCanvas"></canvas>
+  <div class="gradient-orbs">
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="orb o3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills" class="hide-m">Skills</a>
+    <a href="#experience" class="hide-m">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#blog" class="hide-m">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-greeting">xin chào, mình là</div>
+    <h1 class="hero-name">
+      Huỳnh Nguyễn<br /><span class="accent">Xuân Huy.</span>
+    </h1>
+    <div class="hero-role">
+      Mình là <span class="typed" id="typed"></span><span class="cursor-blink"></span>
+    </div>
+    <p class="hero-desc">
+      Một developer trẻ đam mê xây dựng những sản phẩm web đẹp, mượt và có ý nghĩa.
+      Mình tin rằng code giỏi là khi vừa giải quyết được vấn đề, vừa mang lại trải nghiệm tuyệt vời cho người dùng.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary"><span>Xem Projects</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#contact" class="btn btn-ghost"><i class="fa-solid fa-paper-plane"></i> Liên hệ mình</a>
+    </div>
+    <div class="hero-scroll">SCROLL <div class="line"></div> EXPLORE</div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>FRONTEND <i class="fa-solid fa-star"></i> BACKEND <i class="fa-solid fa-star"></i> UI/UX <i class="fa-solid fa-star"></i> REACT <i class="fa-solid fa-star"></i> NODE.JS <i class="fa-solid fa-star"></i> JAVASCRIPT <i class="fa-solid fa-star"></i> PYTHON <i class="fa-solid fa-star"></i> DESIGN <i class="fa-solid fa-star"></i> </span>
+      <span>FRONTEND <i class="fa-solid fa-star"></i> BACKEND <i class="fa-solid fa-star"></i> UI/UX <i class="fa-solid fa-star"></i> REACT <i class="fa-solid fa-star"></i> NODE.JS <i class="fa-solid fa-star"></i> JAVASCRIPT <i class="fa-solid fa-star"></i> PYTHON <i class="fa-solid fa-star"></i> DESIGN <i class="fa-solid fa-star"></i> </span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="reveal"><span class="section-tag">About me</span></div>
+    <h2 class="section-title reveal">Một chút về <em class="grad-italic">mình</em></h2>
+
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img">
+          <span class="avatar-letter">H</span>
+        </div>
+      </div>
+      <div class="about-text reveal reveal-delay-1">
+        <p>Mình là <strong>Huỳnh Nguyễn Xuân Huy</strong>, một developer trẻ với niềm đam mê công nghệ và thiết kế. Mình bắt đầu code từ những dòng <code>console.log("Hello World")</code> đầu tiên và từ đó không ngừng học hỏi.</p>
+        <p>Mình thích kết hợp giữa <strong>tư duy logic của một engineer</strong> và <strong>con mắt thẩm mỹ của một designer</strong> để tạo ra những sản phẩm vừa hoạt động tốt vừa đẹp mắt.</p>
+        <p>Ngoài coding, mình thích tìm hiểu công nghệ mới, đọc sách và uống cà phê ☕</p>
+        <div class="about-stats">
+          <div class="stat-card"><div class="stat-num" data-target="2">0</div><div class="stat-label">Năm kinh nghiệm</div></div>
+          <div class="stat-card"><div class="stat-num" data-target="20">0</div><div class="stat-label">Dự án hoàn thành</div></div>
+          <div class="stat-card"><div class="stat-num" data-target="15">0</div><div class="stat-label">Khách hàng hài lòng</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="reveal"><span class="section-tag">What I do</span></div>
+    <h2 class="section-title reveal">Skills & <em class="grad-italic-2">Expertise</em></h2>
+    <p class="section-subtitle reveal">Mình làm việc trên cả frontend và backend, từ thiết kế giao diện đến triển khai server.</p>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon" style="color:#06b6d4"><i class="fa-solid fa-code"></i></div>
+        <h3>Frontend Development</h3>
+        <p>Xây dựng giao diện web hiện đại, responsive và mượt mà với những animation tinh tế.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Vue</span>
+          <span class="skill-tag">Tailwind</span>
+          <span class="skill-tag">TypeScript</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-icon" style="color:#10b981"><i class="fa-solid fa-server"></i></div>
+        <h3>Backend Development</h3>
+        <p>Xây dựng API mạnh mẽ, scalable và bảo mật. Quản lý database và xử lý business logic.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Express</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">MongoDB</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="skill-icon" style="color:#ec4899"><i class="fa-solid fa-palette"></i></div>
+        <h3>UI / UX Design</h3>
+        <p>Thiết kế giao diện đẹp, dễ dùng. Hiểu user và biến idea thành thiết kế chỉn chu.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">Adobe XD</span>
+          <span class="skill-tag">Photoshop</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-3">
+        <div class="skill-icon" style="color:#f59e0b"><i class="fa-solid fa-mobile-screen"></i></div>
+        <h3>Mobile Development</h3>
+        <p>Phát triển ứng dụng mobile cross-platform với hiệu năng cao và UX tự nhiên.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">React Native</span>
+          <span class="skill-tag">Flutter</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="tech-heading">Tech Stack</h3>
+    <p class="tech-sub">Những công cụ mình sử dụng hàng ngày</p>
+    <div class="tech-grid">
+      <div class="tech-item reveal"><i class="fa-brands fa-react" style="color:#61dafb"></i><span>React</span></div>
+      <div class="tech-item reveal"><i class="fa-brands fa-js" style="color:#f7df1e"></i><span>JS</span></div>
+      <div class="tech-item reveal"><i class="fa-brands fa-html5" style="color:#e34f26"></i><span>HTML5</span></div>
+      <div class="tech-item reveal"><i class="fa-brands fa-css3-alt" style="color:#264de4"></i><span>CSS3</span></div>
+      <div class="tech-item reveal"><i class="fa-brands fa-node-js" style="color:#68a063"></i><span>Node</span></div>
+      <div class="tech-item reveal"><i class="fa-brands fa-python" style="color:#3776ab"></i><span>Python</span></div>
+      <div class="tech-item reveal"><i class="fa-brands fa-git-alt" style="color:#f05033"></i><span>Git</span></div>
+      <div class="tech-item reveal"><i class="fa-brands fa-github" style="color:#fff"></i><span>GitHub</span></div>
+      <div class="tech-item reveal"><i class="fa-brands fa-figma" style="color:#a259ff"></i><span>Figma</span></div>
+      <div class="tech-item reveal"><i class="fa-brands fa-docker" style="color:#2496ed"></i><span>Docker</span></div>
+      <div class="tech-item reveal"><i class="fa-solid fa-database" style="color:#4db33d"></i><span>MongoDB</span></div>
+      <div class="tech-item reveal"><i class="fa-brands fa-aws" style="color:#ff9900"></i><span>AWS</span></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="reveal"><span class="section-tag">Journey</span></div>
+    <h2 class="section-title reveal">Experience & <em class="grad-italic">Education</em></h2>
+    <p class="section-subtitle reveal">Hành trình học hỏi và làm việc của mình</p>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2024 — HIỆN TẠI</div>
+        <h3 class="timeline-title">Freelance Web Developer</h3>
+        <div class="timeline-org">Self-employed</div>
+        <p class="timeline-desc">Nhận làm website, landing page và ứng dụng web cho khách hàng cá nhân và doanh nghiệp nhỏ. Tập trung vào chất lượng, hiệu năng và trải nghiệm người dùng.</p>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2024</div>
+        <h3 class="timeline-title">Dự án Luxury Bus Booking</h3>
+        <div class="timeline-org">Personal Project — React + Node.js</div>
+        <p class="timeline-desc">Xây dựng full-stack ứng dụng đặt vé xe khách cao cấp với tính năng chọn ghế, thanh toán online và quản lý booking. Áp dụng React, Express và MongoDB.</p>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2023 — 2024</div>
+        <h3 class="timeline-title">Frontend Developer Intern</h3>
+        <div class="timeline-org">Tech Startup</div>
+        <p class="timeline-desc">Tham gia phát triển và bảo trì các sản phẩm web sử dụng React, TypeScript và Tailwind CSS. Học được rất nhiều về clean code, code review và teamwork.</p>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2023 — HIỆN TẠI</div>
+        <h3 class="timeline-title">Sinh viên Công nghệ Thông tin</h3>
+        <div class="timeline-org">Đại học</div>
+        <p class="timeline-desc">Học chuyên ngành CNTT, tập trung vào lập trình web, cấu trúc dữ liệu, giải thuật và thiết kế hệ thống.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="reveal"><span class="section-tag">Featured Work</span></div>
+    <h2 class="section-title reveal">Selected <em class="grad-italic-2">Projects</em></h2>
+    <p class="section-subtitle reveal">Một vài sản phẩm mình đã làm — từ ý tưởng đến triển khai</p>
+
+    <div class="projects-grid">
+      <div class="project reveal">
+        <div class="project-thumb t1"><i class="fa-solid fa-bus"></i></div>
+        <div class="project-body">
+          <div class="project-cat">Web App · Full-stack</div>
+          <h3>Luxury Bus Booking</h3>
+          <p>Hệ thống đặt vé xe khách cao cấp với UI hiện đại. Hỗ trợ chọn ghế trực quan, thanh toán online và quản lý chuyến đi.</p>
+          <div class="project-tags">
+            <span class="skill-tag">React</span><span class="skill-tag">Node.js</span><span class="skill-tag">MongoDB</span>
+          </div>
+          <a href="#" class="project-link">Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="project reveal reveal-delay-1">
+        <div class="project-thumb t2"><i class="fa-solid fa-chart-line"></i></div>
+        <div class="project-body">
+          <div class="project-cat">Dashboard · Analytics</div>
+          <h3>Analytics Dashboard</h3>
+          <p>Dashboard quản lý số liệu kinh doanh real-time với biểu đồ tương tác, lọc nâng cao và xuất báo cáo PDF.</p>
+          <div class="project-tags">
+            <span class="skill-tag">Vue</span><span class="skill-tag">Chart.js</span><span class="skill-tag">Express</span>
+          </div>
+          <a href="#" class="project-link">Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="project reveal reveal-delay-2">
+        <div class="project-thumb t3"><i class="fa-solid fa-cart-shopping"></i></div>
+        <div class="project-body">
+          <div class="project-cat">E-commerce · Web</div>
+          <h3>Modern E-Shop</h3>
+          <p>Website thương mại điện tử với giỏ hàng động, thanh toán Stripe, tìm kiếm thông minh và recommendation system.</p>
+          <div class="project-tags">
+            <span class="skill-tag">Next.js</span><span class="skill-tag">Stripe</span><span class="skill-tag">PostgreSQL</span>
+          </div>
+          <a href="#" class="project-link">Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="project reveal reveal-delay-3">
+        <div class="project-thumb t4"><i class="fa-solid fa-comments"></i></div>
+        <div class="project-body">
+          <div class="project-cat">Realtime · Chat App</div>
+          <h3>Realtime Chat App</h3>
+          <p>Ứng dụng chat thời gian thực với Socket.io, hỗ trợ nhóm chat, gửi file và emoji. UI mượt mà, mobile-first.</p>
+          <div class="project-tags">
+            <span class="skill-tag">Socket.io</span><span class="skill-tag">React</span><span class="skill-tag">Redis</span>
+          </div>
+          <a href="#" class="project-link">Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog">
+    <div class="reveal"><span class="section-tag">Writing</span></div>
+    <h2 class="section-title reveal">Latest from the <em class="grad-italic">Blog</em></h2>
+    <p class="section-subtitle reveal">Mình chia sẻ những gì học được trên hành trình làm dev</p>
+
+    <div class="blog-grid">
+      <article class="blog-card reveal">
+        <div class="blog-meta"><span>15 Th04 2026</span><span class="dot"></span><span>5 min read</span></div>
+        <h3>Cách viết React component sạch và dễ maintain</h3>
+        <p>Sau 2 năm làm React, mình đúc kết được những nguyên tắc giúp code dễ đọc, dễ test và dễ mở rộng hơn rất nhiều...</p>
+        <span class="read">Read article →</span>
+      </article>
+
+      <article class="blog-card reveal reveal-delay-1">
+        <div class="blog-meta"><span>02 Th04 2026</span><span class="dot"></span><span>8 min read</span></div>
+        <h3>Tối ưu performance website: từ 2s xuống 0.5s</h3>
+        <p>Hành trình tối ưu một trang web bị chậm và những kỹ thuật mình đã áp dụng — lazy load, code splitting, image optimization...</p>
+        <span class="read">Read article →</span>
+      </article>
+
+      <article class="blog-card reveal reveal-delay-2">
+        <div class="blog-meta"><span>20 Th03 2026</span><span class="dot"></span><span>6 min read</span></div>
+        <h3>Học CSS animation: từ cơ bản đến nâng cao</h3>
+        <p>Animation không chỉ là hiệu ứng đẹp mà còn giúp UX tốt hơn rất nhiều. Bài viết này mình chia sẻ từ basics đến những tip pro...</p>
+        <span class="read">Read article →</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="reveal"><span class="section-tag">Get in touch</span></div>
+    <h2 class="contact-title reveal">Let's <span class="accent">work</span><br />together.</h2>
+    <p class="reveal">Có dự án thú vị? Cần một developer? Hay chỉ muốn chào mình một câu? Đừng ngại nhắn nhé! Mình luôn mở lòng với những cơ hội mới.</p>
+
+    <div class="contact-cards">
+      <a href="mailto:xuanhuy132005@gmail.com" class="contact-card reveal">
+        <i class="fa-solid fa-envelope"></i>
+        <span class="label">Email</span>
+        <span class="value">xuanhuy132005@gmail.com</span>
+      </a>
+      <a href="tel:0775486811" class="contact-card reveal reveal-delay-1">
+        <i class="fa-solid fa-phone"></i>
+        <span class="label">Phone / Zalo</span>
+        <span class="value">0775 486 811</span>
+      </a>
+      <a href="https://www.facebook.com/emm.huy.526/" target="_blank" rel="noopener" class="contact-card reveal reveal-delay-2">
+        <i class="fa-brands fa-facebook"></i>
+        <span class="label">Facebook</span>
+        <span class="value">emm.huy.526</span>
+      </a>
+      <a href="https://zalo.me/0775486811" target="_blank" rel="noopener" class="contact-card reveal reveal-delay-3">
+        <i class="fa-solid fa-comment"></i>
+        <span class="label">Zalo</span>
+        <span class="value">0775 486 811</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Huỳnh Nguyễn Xuân Huy. Made with <span class="heart">♥</span> in Vietnam.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/loader.js"></script>
+  <script src="./js/preloader.js"></script>
+  <script src="./js/particles.js"></script>
+  <script src="./js/typing.js"></script>
+  <script src="./js/animations.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/cursor.js"></script>
+</body>
+</html>

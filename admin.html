@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel — Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="./css/admin.css" />
+
+  <!-- 🔐 Bảo vệ trang admin: nếu chưa login sẽ tự chuyển sang login.html -->
+  <script src="./js/auth.js"></script>
+  <script>requireAuth();</script>
+</head>
+<body>
+  <header class="admin-header">
+    <div class="brand">
+      <i class="fa-solid fa-pen-to-square"></i>
+      <h1>Admin Panel</h1>
+      <span class="tag">Portfolio CMS</span>
+    </div>
+    <div class="actions">
+      <a href="./index.html" class="btn btn-ghost" target="_blank"><i class="fa-solid fa-eye"></i> Xem trang</a>
+      <button class="btn btn-secondary" id="resetBtn"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+      <button class="btn btn-primary" id="saveBtn"><i class="fa-solid fa-download"></i> Lưu thay đổi</button>
+      <button class="btn btn-danger" id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</button>
+    </div>
+  </header>
+
+  <main class="admin-main">
+    <aside class="sidebar">
+      <a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> Hero</a>
+      <a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a>
+      <a href="#stats" class="nav-link"><i class="fa-solid fa-chart-simple"></i> Stats</a>
+      <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+    </aside>
+
+    <div class="content">
+      <section id="hero" class="card">
+        <h2><i class="fa-solid fa-house"></i> Hero Section</h2>
+        <label>Lời chào (greeting)</label>
+        <input type="text" data-key="hero.greeting" />
+
+        <label>Tên dòng 1</label>
+        <input type="text" data-key="hero.nameLine1" />
+
+        <label>Tên dòng 2 (chữ gradient)</label>
+        <input type="text" data-key="hero.nameLine2" />
+
+        <label>Mô tả (description)</label>
+        <textarea rows="4" data-key="hero.description"></textarea>
+      </section>
+
+      <section id="about" class="card">
+        <h2><i class="fa-solid fa-user"></i> About — Giới thiệu</h2>
+        <label>Đoạn 1 (có thể dùng &lt;strong&gt;chữ đậm&lt;/strong&gt;)</label>
+        <textarea rows="3" data-key="about.paragraph1"></textarea>
+
+        <label>Đoạn 2</label>
+        <textarea rows="3" data-key="about.paragraph2"></textarea>
+
+        <label>Đoạn 3</label>
+        <textarea rows="2" data-key="about.paragraph3"></textarea>
+      </section>
+
+      <section id="stats" class="card">
+        <h2><i class="fa-solid fa-chart-simple"></i> Số liệu thống kê</h2>
+        <div class="stats-grid" id="statsGrid"></div>
+      </section>
+
+      <section id="contact" class="card">
+        <h2><i class="fa-solid fa-envelope"></i> Thông tin liên hệ</h2>
+        <label><i class="fa-solid fa-envelope"></i> Email</label>
+        <input type="email" data-key="contact.email" />
+
+        <label><i class="fa-solid fa-phone"></i> Số điện thoại / Zalo</label>
+        <input type="tel" data-key="contact.phone" />
+
+        <label><i class="fa-brands fa-facebook"></i> Facebook URL</label>
+        <input type="url" data-key="contact.facebook" />
+      </section>
+    </div>
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="./js/admin.js"></script>
+  <script src="./js/preloader.js"></script>
+</body>
+</html>

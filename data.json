@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "greeting": "xin chào, mình là",
+    "nameLine1": "Huỳnh Nguyễn",
+    "nameLine2": "Xuân Huy.",
+    "description": "Một developer trẻ đam mê xây dựng những sản phẩm web đẹp, mượt và có ý nghĩa. Mình tin rằng code giỏi là khi vừa giải quyết được vấn đề, vừa mang lại trải nghiệm tuyệt vời cho người dùng."
+  },
+  "about": {
+    "paragraph1": "Mình là <strong>Huỳnh Nguyễn Xuân Huy</strong>, một developer trẻ với niềm đam mê công nghệ và thiết kế.",
+    "paragraph2": "Mình thích kết hợp giữa <strong>tư duy logic của một engineer</strong> và <strong>con mắt thẩm mỹ của một designer</strong> để tạo ra những sản phẩm vừa hoạt động tốt vừa đẹp mắt.",
+    "paragraph3": "Ngoài coding, mình thích tìm hiểu công nghệ mới, đọc sách và uống cà phê ☕",
+    "stats": [
+      {"number": 2, "label": "Năm kinh nghiệm"},
+      {"number": 20, "label": "Dự án hoàn thành"},
+      {"number": 15, "label": "Khách hàng hài lòng"}
+    ]
+  },
+  "contact": {
+    "email": "xuanhuy132005@gmail.com",
+    "phone": "0775486811",
+    "facebook": "https://www.facebook.com/emm.huy.526/"
+  }
+}
