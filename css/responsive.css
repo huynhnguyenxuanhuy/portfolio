@@ -46,6 +46,14 @@
 
   /* Marquee */
   .marquee-track { font-size: 18px; }
+
+  .featured-project {
+    grid-template-columns: 1fr;
+  }
+
+  .project-thumb.t-real {
+    min-height: 300px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -67,4 +75,17 @@
     gap: 12px;
   }
   .tech-item i { font-size: 28px; }
+
+  .preview-hero {
+    padding: 36px 18px 24px;
+  }
+
+  .preview-hero h3 {
+    font-size: 34px;
+  }
+
+  .preview-cards {
+    grid-template-columns: 1fr;
+    padding: 0 18px 18px;
+  }
 }
