@@ -80,8 +80,18 @@
     padding: 36px 18px 24px;
   }
 
+  .project-preview::before {
+    right: 18px;
+    top: 74px;
+    width: 72px;
+    height: 72px;
+    border-radius: 22px;
+    font-size: 28px;
+  }
+
   .preview-hero h3 {
     font-size: 34px;
+    max-width: 240px;
   }
 
   .preview-cards {
