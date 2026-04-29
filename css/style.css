@@ -664,6 +664,16 @@ section {
     radial-gradient(circle at 82% 22%, rgba(20, 184, 166, 0.28), transparent 30%),
     linear-gradient(135deg, #0f172a, #1d4ed8 58%, #06b6d4);
 }
+.project-thumb.t-spa {
+  min-height: 320px;
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 18px;
+  background:
+    radial-gradient(circle at 16% 20%, rgba(217, 180, 106, 0.34), transparent 30%),
+    radial-gradient(circle at 78% 22%, rgba(148, 163, 184, 0.2), transparent 32%),
+    linear-gradient(135deg, #1f1a17, #7c5a2e 58%, #d9b46a);
+}
 .project-thumb i {
   font-size: 64px;
   color: rgba(255, 255, 255, 0.85);
@@ -728,6 +738,18 @@ section {
 .mobile-preview .preview-badge i,
 .mobile-preview .preview-cards i {
   color: #67e8f9;
+}
+.spa-preview {
+  background:
+    linear-gradient(135deg, rgba(31, 26, 23, 0.9), rgba(124, 90, 46, 0.74)),
+    url("https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200&q=80") center/cover;
+}
+.spa-preview::before {
+  content: '\f5bb';
+}
+.spa-preview .preview-badge i,
+.spa-preview .preview-cards i {
+  color: #f5d795;
 }
 .preview-top {
   height: 42px;
