@@ -684,6 +684,16 @@ section {
     radial-gradient(circle at 78% 22%, rgba(72, 217, 176, 0.24), transparent 32%),
     linear-gradient(135deg, #020c08, #14532d 56%, #48d9b0);
 }
+.project-thumb.t-ceko {
+  min-height: 320px;
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 18px;
+  background:
+    radial-gradient(circle at 16% 20%, rgba(59, 130, 246, 0.3), transparent 30%),
+    radial-gradient(circle at 80% 22%, rgba(20, 184, 166, 0.26), transparent 32%),
+    linear-gradient(135deg, #111827, #1d4ed8 56%, #0f766e);
+}
 .project-thumb i {
   font-size: 64px;
   color: rgba(255, 255, 255, 0.85);
@@ -772,6 +782,18 @@ section {
 .meet-preview .preview-badge i,
 .meet-preview .preview-cards i {
   color: #86efac;
+}
+.t-ceko .project-preview {
+  background:
+    linear-gradient(135deg, rgba(17, 24, 39, 0.9), rgba(29, 78, 216, 0.74)),
+    url("https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?w=1200&q=80") center/cover;
+}
+.t-ceko .project-preview::before {
+  content: '\f46c';
+}
+.t-ceko .preview-badge i,
+.t-ceko .preview-cards i {
+  color: #7dd3fc;
 }
 .preview-top {
   height: 42px;
